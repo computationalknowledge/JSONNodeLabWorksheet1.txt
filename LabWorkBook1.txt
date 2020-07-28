@@ -1,0 +1,13 @@
+JSON Lab activity:
+
+1. Let's create a text file on the 
+file system to contain a JSON object
+for a student:
+
+student.json file.
+// customer.json
+{
+  "name": "Mary",
+  "studentID": "C33333",
+  "programgroup": "2020S MAD T3 S2",
+}
