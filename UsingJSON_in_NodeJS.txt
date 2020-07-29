@@ -1,5 +1,5 @@
 JSON Lab activity:
-
+First we need to see how to access the Host File System using Node.js 
 npm install fs   
 
 1. Let's create a text file on the 
@@ -13,3 +13,12 @@ student.json file.
   "studentID": "C33333",
   "programgroup": "2020S MAD T3 S2"
 }
+
+var fs = require('fs');
+
+fs.readFile('./student.json', 'utf8', function(err, data) {
+    if (err) {
+        return console.log(err);
+    }
+    console.log(data);
+});
